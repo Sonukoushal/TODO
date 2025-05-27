@@ -8,6 +8,11 @@ from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth.models import User 
 from rest_framework import serializers
 from rest_framework_simplejwt.tokens import RefreshToken
+from django.http import JsonResponse
+
+def home(request):
+    return JsonResponse({"message": "Welcome to the TODO API!"})
+
 
 class TaskListCreateView(APIView):
     permission_classes = [IsAuthenticated]

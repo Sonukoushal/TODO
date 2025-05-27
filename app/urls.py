@@ -1,8 +1,9 @@
 from django.urls import path 
-from .views import TaskListCreateView, TaskDetailView
+from .views import TaskListCreateView, TaskDetailView,home
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from .views import RegisterAPIView, LogoutAPIView
 urlpatterns = [
+    path('', home),  # 👈 Yeh root ke liye hai
     path('tasks/',TaskListCreateView.as_view(),name='task-list-create'),
     path('task/<int:pk>/', TaskDetailView.as_view(),name='task_detail'),
     path('token/',TokenObtainPairView.as_view(),name='token_obtain_pair'),
