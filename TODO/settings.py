@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+ROOT_URLCONF = 'TODO.urls'
+
 
 # Application definition
 
