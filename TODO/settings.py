@@ -95,11 +95,15 @@ WSGI_APPLICATION = 'TODO.wsgi.application'
 import os
 import dj_database_url
 from dotenv import load_dotenv
-load_dotenv()  # Load .env file
+
+load_dotenv()
 
 DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get('postgresql://sonu_xbu6_user:77SF00rNwjrxx1OssK7KkuWBMoRccXM7@dpg-d0s95rje5dus73am7ct0-a.virginia-postgres.render.com/sonu_xbu6'))
+    'default': dj_database_url.config(
+        default='postgresql://sonu_xbu6_user:77SF00rNwjrxx1OssK7KkuWBMoRccXM7@dpg-d0s95rje5dus73am7ct0-a.virginia-postgres.render.com/sonu_xbu6'
+    )
 }
+
 
 
 
