@@ -98,7 +98,7 @@ from dotenv import load_dotenv
 load_dotenv()  # Load .env file
 
 DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get('postgresql://sonu_0ns6_user:pg0hvUKNWqwir5hpxsygFjdcjJhDxKAU@dpg-d0rh1tumcj7s73899dlg-a/sonu_0ns6'))
+    'default': dj_database_url.config(default=os.environ.get('postgresql://sonu_xbu6_user:77SF00rNwjrxx1OssK7KkuWBMoRccXM7@dpg-d0s95rje5dus73am7ct0-a.virginia-postgres.render.com/sonu_xbu6'))
 }
 
 
